@@ -7,9 +7,12 @@ node_modules
 .next
 .open-next
 .wrangler
+.cloudflare
 out
 dist
 build
+!apps/web/src/lib/build/
+!apps/web/src/lib/build/**
 *.tsbuildinfo
 
 # Environment files

@@ -1,0 +1,14 @@
+.git/
+**/node_modules/
+**/.output/
+**/dist/
+**/.cloudflare/
+.codex/
+.env
+.env.*
+**/.dev.vars*
+scratchpad/
+**/coverage/
+**/test-results/
+!apps/web/src/lib/build/
+!apps/web/src/lib/build/**

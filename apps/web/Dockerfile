@@ -120,7 +120,7 @@ COPY --from=builder --chown=quackback:nodejs /app/packages/db/drizzle ./drizzle
 
 # Copy entrypoint script
 COPY --chown=quackback:nodejs apps/web/docker-entrypoint.sh ./docker-entrypoint.sh
-RUN chmod +x ./docker-entrypoint.sh
+RUN sed -i 's/\r$//' ./docker-entrypoint.sh && chmod +x ./docker-entrypoint.sh
 
 # Create writable directories for Bun runtime
 RUN mkdir -p /app/.cache && chown -R quackback:nodejs /app/.cache

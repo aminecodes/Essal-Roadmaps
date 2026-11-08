@@ -1,0 +1,9 @@
+{
+  "name": "essal-roadmaps-edge",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@cloudflare/build-output-utils": "^0.8.0",
+    "@cloudflare/config": "0.18.0"
+  }
+}

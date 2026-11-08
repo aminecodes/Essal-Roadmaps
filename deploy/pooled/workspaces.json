@@ -1,0 +1,5 @@
+[
+  { "slug": "access", "name": "Essal Access", "hostname": "hub.access.essal.cloud" },
+  { "slug": "project", "name": "Essal Project", "hostname": "hub.project.essal.cloud" },
+  { "slug": "talent", "name": "Essal Talent", "hostname": "hub.talent.essal.cloud" }
+]

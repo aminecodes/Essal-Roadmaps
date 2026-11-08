@@ -23,6 +23,9 @@ import { createMiddleware } from '@tanstack/react-start'
 export const workspaceContextMiddleware = createMiddleware().server(async ({ next, request }) => {
   const { config } = await import('@/lib/server/config')
   if (!config.isPooledTenancy) return next()
+  const { workspaceDirectory } = await import('@/lib/server/workspaces/directory')
+  const directory = workspaceDirectory(request)
+  if (directory) return directory
   const { resolveWorkspaceAndContinue } = await import('@/lib/server/workspaces/request-scope')
   return resolveWorkspaceAndContinue({ request, next: () => Promise.resolve(next()) })
 })
