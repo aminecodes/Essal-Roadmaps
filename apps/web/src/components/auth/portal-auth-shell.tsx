@@ -57,6 +57,11 @@ export function PortalAuthShell({ heading, subheading, children, footer }: Porta
         </div>
         {children}
         {footer}
+        <nav aria-label="Essal legal policies" className="flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
+              <a href="https://legal.essal.it.com/terms" target="_blank" rel="noopener noreferrer" className="hover:underline">Terms</a>
+              <a href="https://legal.essal.it.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:underline">Privacy</a>
+              <a href="https://legal.essal.it.com/refunds" target="_blank" rel="noopener noreferrer" className="hover:underline">Refunds</a>
+            </nav>
       </div>
     </div>
   )
